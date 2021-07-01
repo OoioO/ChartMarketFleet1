@@ -1,0 +1,17 @@
+defaultNamespace: ottmar
+
+helm:
+  chart: nginx2
+  repo: https://ooioo.github.io/ChartMarket/
+  releaseName: nginx2-fleet
+  version: 1.1.8
+  values:
+    ingress:
+      annotations: {}
+      enabled: true
+      hosts:
+        - host: "nginx2.poc-applications.plgrnd.be"
+          paths:
+            - path: /
+              pathType: ImplementationSpecific
+      tls: []
