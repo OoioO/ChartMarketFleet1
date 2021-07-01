@@ -4,7 +4,7 @@ helm:
   chart: nginx1
   repo: https://ooioo.github.io/ChartMarket/
   releaseName: nginx1-fleet
-  version: 0.1.0
+  version: 0.1.1
   values:
     ingress:
       annotations: {}
